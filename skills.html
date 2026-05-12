@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaa5fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: rgb(217, 162, 234);
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 10px;
+            background: #4CAF50;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        section {
+            background: rgb(206, 122, 188);
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #d6fcb2;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            background: #87c6f0;
+        }
+        button {
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+         nav {
+            display: flex;
+            justify-content: center;
+            background: #e4ea90;
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+          body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #ec4fcc;
+        }
+        h1 {
+            margin: 20px 0;
+
+        }
+         body {
+            font-family: Arial;
+            text-align: center;
+            background:pink;
+            color:black;
+            text-size-adjust: 20%;
+        }
+
+
+    </style>
+</head>
+<body>
+     <nav>
+        <div class="container">
+            <div class="logo">Shikshika Rana</div>
+          
+        </div>
+    </nav>
+<nav>
+    <a href="index.html">Home</a>
+      <a href="protfolio.html">Protfolio</a>
+       <a href="skills.html">Skills</a> 
+        <a href="contact.html">Contact</a>   
+    
+</nav>
+<h1>My HTML Skills Demo</h1>
+<p> I can create forms, tables,and lists through HTML.<br>
+    Similarly, I can style them with CSS and<br>
+     add interactivity with JavaScript.</p>
+
+<!-- TABLE SECTION -->
+<section>
+    <h2>Table Example</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+        <tr>
+            <td>Shikshika</td>
+            <td>HTML</td>
+            <td>Advanced</td>
+        </tr>
+        <tr>
+            <td>Shikshika</td>
+            <td>CSS</td>
+            <td>Intermediate</td>
+        </tr>
+    </table>
+</section>
+
+<!-- LIST SECTION -->
+<section>
+    <h2>List Example</h2>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Learn HTML</li>
+        <li>Practice CSS</li>
+        <li>Build Projects</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Web Design</li>
+        <li>Programming</li>
+        <li>Problem Solving</li>
+    </ul>
+</section>
+
+<!-- FORM SECTION -->
+<section>
+    <h2>Form Example</h2>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Choose Skill:</label>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+
+        <label>Message:</label>
+        <textarea placeholder="Write something..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<div class="container">
+    <h1>My Skills</h1>
+
+    <div class="skills">
+        <div class="skill-card">
+            <div class="skill-title">HTML</div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-title">CSS</div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-title">JavaScript</div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-title">C Programming</div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-title">Java</div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 65%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Shikshika Rana. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

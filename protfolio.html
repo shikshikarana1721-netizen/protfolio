@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shikshika Rana</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #portfolio {
+            background-color: #fff3e0;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #portfolio h1 {
+            color: #ff6f00;
+            font-size: 2.5rem;
+        }
+        #portfolio p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #e4ea90;
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+          body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin: 20px 0;
+
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        body {
+            font-family: Arial;
+            text-align: center;
+            background:pink;
+            color:black;
+            text-size-adjust: 20%);
+        }
+
+        .slider {
+            width: 60%;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background: #00adb5;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #007b80;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Shikshika Rana</div>
+          
+        </div>
+    </nav>
+<nav>
+    <a href="index.html">Home</a>
+      <a href="protfolio.html">Protfolio</a>
+       <a href="skills.html">Skills</a>  
+        <a href="contact.html">Contact</a>  
+    
+</nav>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>Here are some of my recent projects. Stay tuned for more!</p>
+            <h2> Project 1: Image Slider of Heritage of nepal</h2>
+            <div class="gallery">
+        <img src="/image/Pashupatinath Temple _ Kathmandu, Nepal.jpg" alt="Image 1">
+        <img src="/image/swayambhu.jpg" alt="Image 2">
+        <img src="/image/boudhanath.webp" alt="Image 3">
+        <img src="/image/lumbini.jpg" alt="Image 4">
+        <img src="/image/patan.jpg" alt="Image 5">
+        <img src="/image/pokhara.jpg" alt="Image 6">
+        <img src="/image/kathmandu durbar.jpg" alt="Image 7">
+        <img src="/image/patan.jpg" alt="Image 8">
+        <img src="/image/kathmandu.jpg" alt="Image 9">
+    </div>
+    <h2>Video Slider</h2>
+
+    <div class="slider">
+        <video id="videoPlayer" controls>
+            <source src="nepal.mp4" type="video/mp4">
+        </video>
+
+        <div class="buttons">
+            <button onclick="prevVideo()">⏮ Prev</button>
+            <button onclick="nextVideo()">Next ⏭</button>
+        </div>
+    </div>
+
+    <script>
+        const videos = ["nepal.mp4", "culture.mp4"];
+        let index = 0;
+
+        function showVideo() {
+            const player = document.getElementById("videoPlayer");
+            player.src = videos[index];
+            player.load();
+            player.play();
+        }
+
+        function nextVideo() {
+            index = (index + 1) % videos.length;
+            showVideo();
+        }
+
+        function prevVideo() {
+            index = (index - 1 + videos.length) % videos.length;
+            showVideo();
+        }
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Shikshika Rana. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
